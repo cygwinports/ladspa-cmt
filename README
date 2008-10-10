@@ -1,0 +1,64 @@
+ladspa-cmt
+------------------------------------------
+The Computer Music Toolkit (CMT) is a collection of LADSPA plugins for 
+use with software synthesis and recording packages.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  ladspa-sdk-1.13-1
+  make-3.81-1
+
+Canonical website:
+  http://www.ladspa.org/
+
+Canonical download:
+  http://www.ladspa.org/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack ladspa-cmt-1.16-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./ladspa-cmt-1.16-X.cygport all
+
+This will create:
+  /usr/src/ladspa-cmt-1.16-X-src.tar.bz2
+  /usr/src/ladspa-cmt-1.16-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/ladspa/cmt.so
+  /usr/share/doc/ladspa-cmt-1.16/COPYING
+  /usr/share/doc/ladspa-cmt-1.16/README
+  /usr/share/doc/ladspa-cmt-1.16/html/adding_plugins.html
+  /usr/share/doc/ladspa-cmt-1.16/html/bugs.html
+  /usr/share/doc/ladspa-cmt-1.16/html/changes.html
+  /usr/share/doc/ladspa-cmt-1.16/html/index.html
+  /usr/share/doc/ladspa-cmt-1.16/html/installation.html
+  /usr/share/doc/ladspa-cmt-1.16/html/license.html
+  /usr/share/doc/ladspa-cmt-1.16/html/overview.html
+  /usr/share/doc/ladspa-cmt-1.16/html/plugins.html
+  /usr/share/doc/ladspa-cmt-1.16/html/tasks.html
+  /usr/share/ladspa/rdf/cmt.rdf
+
+------------------
+
+Port Notes:
+
+----- version 1.16-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
