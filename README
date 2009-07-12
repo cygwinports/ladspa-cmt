@@ -4,16 +4,18 @@ The Computer Music Toolkit (CMT) is a collection of LADSPA plugins for
 use with software synthesis and recording packages.
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.0-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  ladspa-sdk-1.13-1
-  make-3.81-1
+  cygport-0.9.7-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  ladspa-sdk-1.13-10
+  make-3.81-2
 
 Canonical website:
   http://www.ladspa.org/
@@ -39,25 +41,25 @@ This will create:
 Files included in the binary package:
 
   /usr/lib/ladspa/cmt.so
-  /usr/share/doc/ladspa-cmt-1.16/COPYING
-  /usr/share/doc/ladspa-cmt-1.16/README
-  /usr/share/doc/ladspa-cmt-1.16/html/adding_plugins.html
-  /usr/share/doc/ladspa-cmt-1.16/html/bugs.html
-  /usr/share/doc/ladspa-cmt-1.16/html/changes.html
-  /usr/share/doc/ladspa-cmt-1.16/html/index.html
-  /usr/share/doc/ladspa-cmt-1.16/html/installation.html
-  /usr/share/doc/ladspa-cmt-1.16/html/license.html
-  /usr/share/doc/ladspa-cmt-1.16/html/overview.html
-  /usr/share/doc/ladspa-cmt-1.16/html/plugins.html
-  /usr/share/doc/ladspa-cmt-1.16/html/tasks.html
+  /usr/share/doc/ladspa-cmt/COPYING
+  /usr/share/doc/ladspa-cmt/README
+  /usr/share/doc/ladspa-cmt/html/adding_plugins.html
+  /usr/share/doc/ladspa-cmt/html/bugs.html
+  /usr/share/doc/ladspa-cmt/html/changes.html
+  /usr/share/doc/ladspa-cmt/html/index.html
+  /usr/share/doc/ladspa-cmt/html/installation.html
+  /usr/share/doc/ladspa-cmt/html/license.html
+  /usr/share/doc/ladspa-cmt/html/overview.html
+  /usr/share/doc/ladspa-cmt/html/plugins.html
+  /usr/share/doc/ladspa-cmt/html/tasks.html
   /usr/share/ladspa/rdf/cmt.rdf
 
 ------------------
 
 Port Notes:
 
------ version 1.16-1 -----
-Initial release for Cygwin.
+----- version 1.16-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
