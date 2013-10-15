@@ -1,0 +1,29 @@
+NAME="ladspa-cmt"
+VERSION=1.16
+RELEASE=10
+CATEGORY="Audio"
+SUMMARY="LADSPA plugins for music synthesis and recording"
+DESCRIPTION="The Computer Music Toolkit (CMT) is a collection of LADSPA
+plugins for use with software synthesis and recording packages."
+HOMEPAGE="http://www.ladspa.org/"
+SRC_URI="http://www.ladspa.org/download/cmt_src_${VERSION}.tgz
+         mirror://portage/media-libs/${NAME}/files/cmt.rdf"
+SRC_DIR="cmt"
+PATCH_URI="mirror://portage/media-libs/${NAME}/files/${NAME}-1.16-mallocstdlib.patch"
+
+src_compile() {
+	lndirs
+	cd ${B}/src
+	cygmake targets CFLAGS="${CFLAGS}"
+}
+
+src_install() {
+	cd ${B}
+	exeinto /usr/lib/ladspa
+	doexe plugins/*.so
+
+	insinto /usr/share/ladspa/rdf
+	doins cmt.rdf
+}
+DOCS="doc/COPYING"
+HTMLDOCS="doc/*.html"
